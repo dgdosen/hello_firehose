@@ -17,8 +17,8 @@ development:
   encoding: unicode
   database: hello_firehose_development
   pool: 5
-  username: hello_firehose
-  password:
+  username: postgres
+  password: password
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,8 +43,8 @@ test:
   encoding: unicode
   database: hello_firehose_test
   pool: 5
-  username: hello_firehose
-  password:
+  username: postgres
+  password: password
 
 production:
   adapter: postgresql

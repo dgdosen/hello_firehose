@@ -1,4 +1,6 @@
 HelloFirehose::Application.routes.draw do
+  resources :squishee_cups
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
