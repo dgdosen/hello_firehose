@@ -57,7 +57,7 @@ class SquisheeCupsController < ApplicationController
   # PUT /squishee_cups/1.json
   def update
     @squishee_cup = SquisheeCup.find(params[:id])
-
+    puts params.to_json
     respond_to do |format|
       if @squishee_cup.update_attributes(params[:squishee_cup])
         format.html { redirect_to @squishee_cup, notice: 'Squishee cup was successfully updated.' }
